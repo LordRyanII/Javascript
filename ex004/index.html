@@ -4,20 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="imagens/buttom-adicao.jpg" type="image/x-icon">
+    <title>calculadora de adição</title>
     <style>
         body{
             font-size: 50px;
-            background-color: aqua;
+            background-color:gray;
             color: white;
             font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
         }
+
+        main{
+            color: white;
+            margin: auto;
+        }
+
+        span{
+            color: black;
+        }
+        .n1{
+            background-color: aquamarine;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.519);
+        }
+        
+
     </style>
 </head>
 <body>
-    <script>
-        var nome = window.prompt('Digite o seu nome, por favor!')
-        document.write(`Olá, ${nome}! Seu nome possuí ${nome.length} letras.`)
-    </script>
+    <main>
+        <script>
+        
+            var n1 =Number.parseFloat(window.prompt('Digite um número: '));
+            var n2 =Number.parseFloat(window.prompt('Digite outro número: '));
+            var resultado = n1 + n2
+            document.write(`<span>A soma de:</span> <br> <span class="n1">${n1}</span> <br> <span>e</span> <span class="n1">${n2}</span> <span>é igual:</span> <br>` + resultado) //EXIBE O RESULTADO NA TELA, COM OS EFEITOS DO CSS3.
+        </script>
+    </main>
 </body>
 </html>
