@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: aliceblue;
+        }
+
+       
+        div{
+            text-align: center;
+            margin-top: 200px;
+            background-color: aliceblue;
+            width: 337px;
+            height: 230px;
+            border: 1px solid blue;
+        }
+        header{
+            padding: 20px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: blue;
+            font-size: 25px;
+        }
+
+        footer{
+            text-align: center;
+            margin-top: 0px;
+            background-color: rgb(23, 23, 25);
+            color: white;
+            width: 337px;
+            height: 20px;
+            border: 1px solid rgba(23, 23, 25, 0.692);
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <strong>Login</strong>
+            <!--Parte do login-->
+        </header>
+        
+            <p> E-mail: <!--Parte de inserção do e-mail-->
+                <input type="email" name="e-mail" id="e-mail" placeholder="ex: joaofernando@gmail.com"></p>
+            <p> Senha: <!--Parte de inserção da senha-->
+                <input type="password" name="senha" id="senha" placeholder="Use letras maiúsculas, e caracteres."style="margin-top: 20px;"></p>
+                <input type="checkbox" name="check" id="check" style="margin-top: 20px;"> mantenha-me logado
+                <!--Parte de checkbox-->
+                <br>
+                <input type="button" value="logar" style="margin-top: 20px;" onclick="clicar()">
+    </div>
+    <footer>
+        Ainda não tem conta? <a href="#"> cadastre-se </a>
+    </footer>
+
+    <script>
+        var senha = window.document.getElementById('senha')//variavel para o password
+        var email = window.document.getElementById('e-mail')//variavel para o e-mail
+        
+        function clicar() {
+            alert(`Seu e-mail ${email.value} é inválido, tente novamente`)//cria um alert com o e-mail
+            console.log(email.value);
+            alert('Deseja manter essa senha?' + senha.value)//cria um alert com a senha
+            console.log(senha.value);
+            }
+    </script>
+    
+</body>
+</html>
