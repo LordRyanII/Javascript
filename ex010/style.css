@@ -1,0 +1,34 @@
+body{
+    background-image: url(wallpapper/traffic.jpg);
+    background-repeat: no-repeat;
+    background-size: 111%;
+    width: 100vw;
+    height: 50vh;
+
+}
+
+header{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: orangered;
+    text-shadow:  1px 1px 2px black;
+}
+main{
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
+    width: 485px;
+    height: 338px;
+    box-shadow: 2px 7px 2px 2px rgb(0 0 0 / 49%);
+    border-radius: 10px;
+}
+.verificar{
+    margin-top: 20px;
+}
+.res{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 15px;
+}
