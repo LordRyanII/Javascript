@@ -1,4 +1,5 @@
-var hora = 13
+var agora = new Date()
+var hora = agora.getHours()
 if(hora < 6){
     console.log(`Boa madrugada! são exatamente ${hora} horas da manhã, considere um descanso!`)
 }else if(hora < 12 ){
