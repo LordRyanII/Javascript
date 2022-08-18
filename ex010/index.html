@@ -35,7 +35,10 @@
                 if (informacao > 60) {
                 resultado.innerHTML += `<p> <strong> MULTADO! </strong> </p>`
                 resultado.style.color = 'red'
-                } else{
+                }else if (informacao <30){
+                    resultado.innerHTML += `<p> <strong> Velocidade abaixo do permitido </p>`
+                } 
+                else{
                     resultado.innerHTML += `<p>Moderado, mas faça uso sempre do cinto de segurança!</p>`
                     resultado.style.color = 'black'
                 }
