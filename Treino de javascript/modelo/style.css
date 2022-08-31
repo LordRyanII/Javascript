@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(15, 77, 212);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+header{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 1px 3px black
+}
+
+section{
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    padding: 15px;
+    width: 500px;
+    box-shadow: 5px 6px 5px 0px rgba(0, 0, 0, 0.489);
+}
+div{
+    text-align: center;
+    padding: 5px;
+}
+#msg{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+footer{
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
