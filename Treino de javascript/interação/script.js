@@ -21,21 +21,21 @@ function verificar() {
         var genero = ''
         if (fsex[0].checked) {
             genero = 'Homem'
-            if(idade >0 || idade < 5){
+            if(idade > 0 && idade < 5){
                 //Bebê
                 img.setAttribute("src", 'imagens/bebemasculino.png')
-            }else if (idade > 5 || idade < 10){
+            }else if (idade > 5 && idade < 10){
                 //Criança
-                img.setAttribute("src, 'imagens/bebemasculino.png' ")
-            } else if( idade > 10 ||idade < 20){
+                img.setAttribute("src", 'imagens/criancamasculino.png')
+            } else if( idade > 10 && idade < 20){
                 //jovem
-                img.setAttribute("src, 'imagens/bebemasculino.png' ")
-            } else if (idade > 20 || idade > 50){
+                img.setAttribute("src", 'imagens/jovemmasculino.png')
+            } else if (idade > 20 && idade < 50){
                 //adulto
-                img.setAttribute("src, 'imagens/bebemasculino.png' ")
+                img.setAttribute("src", 'imagens/adultomasculino.png')
             } else if(idade >= 50){
                 //idoso
-                img.setAttribute("src, 'imagens/bebemasculino.png' ")
+                img.setAttribute("src", 'imagens/velhomasculino.png')
             }
         } else if(fsex[1].checked){
             genero = 'Mulher'
