@@ -1,31 +1,34 @@
 //começo do meu código
 
-function carregar() {
-    console.log('ola')
-    var msg = window.document.getElementById('msg')
-    var img = window.document.getElementById('imagem')
+function verificar() {
+    //window.alert('Funcionou!')
     var data = new Date()
-    var hora = data.getHours()
-    //var hora = 20
-    //variavel acima para testar código
-    if (hora >= 0 && hora < 12){
-    //bom dia
-    img.src = 'imagens/manha.250.png'
-    msg.innerHTML = `Agora são ${hora} horas.
-    Tenha um bom dia!`
-    window.document.body.style.background= '#e49f8a'
-    //img.setAttribute("src","./imagens/noite.250.png")
-    } else  if(hora > 12 && hora <= 18 ){
-    //Boa tarde
-    msg.innerHTML= `Agora são ${hora} horas. 
-    Tenha uma Boa tarde! `
-    img.src = 'imagens/tarde_250.png'
-    window.document.body.style.background= '#4e2320'
+    //variavél para pegar os 4 digitos do ano do sistema
+    var ano = data.getFullYear()
+    var fano = window.document.getElementById('ano')
+    var res = window.document.getElementById('res')
+    if( fano.value.length == 0 || Number(fano.value) > ano) {
+        window.alert('[Erro] Verifique o ano digitado e tente novamente')
     } else{
-    //Boa noite
-    img.src = 'imagens/noite.250.png'
-    msg.innerText= (`Agora são exatamente ${hora} horas. 
-    Tenha uma Boa noite! `)
-    window.document.body.style.background= '#201f1f'
+        window.confirm('[Sucesso] clique em "ok", para ver os resultados abaixo!')
+        var fsex = window.document.getElementsByName('radsex')
+        //Nos radius ele não pega por id, só "name".
+        var idade = ano - Number(fano.value)
+        var img = document.createElement('img')
+        //cria uma tag html com javascript
+        img.setAttribute("id, 'foto' ")
+        //complementa a tag img criada, com o id "foto"!
+        var genero = ''
+        if (fsex[0].checked) {
+            genero = 'Homem'
+            if(idade >0 || idade < 5){
+                //Bebê
+                img.setAttribute("src, './imagens/bebemasculino.png' ")
+            }
+        } else if(fsex[1].checked){
+            genero = 'Mulher'
+        }
+        res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
     }
+
 }

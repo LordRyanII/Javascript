@@ -5,24 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagens/favicon/clock.jpg" type="image/x-icon">
-    <title>Relógio digital</title>
+    <title>Game | Interação </title>
 </head>
-<body onload="carregar()">
+<body>
     <header>
         <h1>
-            Hora do dia
+            Verificador de idade
         </h1>
     </header>
     <section>
-        <div id="msg">
-            Aqui vai aparecer a mensagem
+        <div>
+            <p>
+                Ano de nascimento
+                <input type="number" name="ano" id="ano">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="masculino" checked>
+                <label for="masculino">masculino</label>
+                <input type="radio" name="radsex" id="feminino">
+                <label for="feminino">Feminino</label>
+            </p>
+            <P>
+                <input type="button" value="verificar" onclick="verificar()">
+            </P>
         </div>
-        <div id="photo">
-            <img id="imagem" src="imagens/manha.250.png" alt="imagem relativa ao bom dia!">
+        <div id="res">
+            Preencha os dados acima para participar da Interação!
         </div>
     </section>
     <br>
+    <!---<img src="imagens/bebemasculino.png" alt="">--->
     <br>
     <footer>
         <p>
