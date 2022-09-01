@@ -21,7 +21,7 @@ function verificar() {
         var genero = ''
         if (fsex[0].checked) {
             genero = 'Homem'
-            if(idade > 0 && idade < 5){
+            if(idade >= 0 && idade < 5){
                 //Bebê
                 img.setAttribute("src", 'imagens/bebemasculino.png')
             }else if (idade > 5 && idade < 10){
@@ -39,7 +39,7 @@ function verificar() {
             }
         } else if(fsex[1].checked){
             genero = 'Mulher'
-        } if(idade > 0 && idade < 5){
+        } if(idade >= 0 && idade < 5){
             //bebê
             img.setAttribute("src", 'imagens/bebefeminino.png')
         } else if(idade > 5 && idade < 10){
