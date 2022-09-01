@@ -16,14 +16,14 @@ function verificar() {
         var idade = ano - Number(fano.value)
         var img = document.createElement('img')
         //cria uma tag html com javascript
-        img.setAttribute("id, 'foto' ")
+        img.setAttribute("id, 'foto'")
         //complementa a tag img criada, com o id "foto"!
         var genero = ''
         if (fsex[0].checked) {
             genero = 'Homem'
             if(idade >0 || idade < 5){
                 //Bebê
-                img.setAttribute("src, 'imagens/bebemasculino.png' ")
+                img.setAttribute("src, 'imagens/bebemasculino.png'")
             }else if (idade > 5 || idade < 10){
                 //Criança
                 img.setAttribute("src, 'imagens/bebemasculino.png' ")
