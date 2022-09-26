@@ -1,8 +1,9 @@
 //Outro exemplo com while
 
+/*let vagas_auto = [
+    'fiat uno',
+    'Fiat Palio',
+    'Fiat clio',
+]
 
-var exemplo = 1
-    while(exemplo <= 6){
-    console.log(`Passo ${exemplo}`)
-    exemplo ++
-}
+console.log(vagas_auto)
