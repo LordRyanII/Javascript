@@ -1,7 +1,6 @@
 //começo do meu código
-const moduloLogin = require('./modulo-login/index.js')
-const emailinput = document.querySelector('#email')
-const passwordinput = document.querySelector('#senha');
+const moduloLogin = require('./logins.json')
+
 
 function verifiqueDados() {
   // Errors:
